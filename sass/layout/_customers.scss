@@ -1,0 +1,82 @@
+.customers__list{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:0;
+     flex-wrap: wrap;
+    }
+
+    
+    
+    .customers__icon{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:170px;
+    height:92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill:var(--icon-fill);
+    background-color:var(--site-nav-bg-color);
+    transition-property: border, fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--time-function); 
+    
+    &:hover{
+        fill:var(--accent-text-color);
+        border:  1px solid  #2196F3;
+    }
+    }
+
+
+@media screen and (min-width:480px) and (max-width:767px){
+   .customers__item:nth-child(-n+4){
+    margin-bottom:30px;}
+    .customers__item:nth-child(2n+1){
+        margin-right:30px;
+    }}
+
+ @media screen and (min-width:768px) and (max-width:1199px){
+    .customers__item{
+    margin-right:30px;
+    margin-bottom:30px;
+    }
+    .customers__item:nth-child(3n){
+margin-right:0;
+    }
+    .customers__item:nth-child(n+4){
+        margin-bottom:0;
+    }
+}
+
+   @media screen and (min-width:1200px){
+    .customers__item:not(:last-child){
+    margin-right:30px;
+    margin-bottom:0;
+    }
+    }
+    .icon-ya-co{
+        width:42px;
+        height:48px;
+    }
+    .icon-company-tagline-here1{
+    width:40px;
+    height:52px;
+    }
+    .icon-fish{
+        width:44px;
+        height:42px;
+    }
+    .icon-foster-peters{
+        width:84px;
+        height:40px;
+    }
+    .icon-brand{
+        width:62px;
+        height:46px;
+    }
+    .icon-company-cube{
+        width:94px;
+        height:44px;
+    }
+    

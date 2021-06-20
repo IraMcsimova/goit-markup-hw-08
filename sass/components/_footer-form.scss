@@ -1,0 +1,62 @@
+.footer-contacts-part{
+    justify-content:baseline;
+    margin-right:70px;
+}
+
+.footer__contact-signing{
+margin-left:93px;
+}
+
+.contact-signing__header{
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+font-weight: 700;
+margin-bottom:20px;
+}
+
+.contact-signing__form{
+    display:block;
+   justify-content:center;
+    align-items:center;
+    }
+    
+.contact-signing__form-input{
+    width:358px;
+    height:50px;
+margin-right:12px;
+padding:16px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background:  var(--hero-footer-bg-color);
+color:var(--hero-text-color);
+outline:var(--title-text-color);
+}
+
+.contact-signing__form-button{
+    position:relative;
+    padding:0;
+   min-width:200px;
+   padding:10px 62px 10px 29px;
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 1px solid #2196F3;
+color:var(--hero-text-color);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.8;
+letter-spacing: 0.06em;
+cursor: pointer;
+}
+.icon-send{
+    position:absolute;
+    width:24px;
+    height:24px;
+    margin-left:10px;
+    fill:var(--hero-text-color);
+
+     }

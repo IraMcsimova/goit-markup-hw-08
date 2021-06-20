@@ -1,0 +1,51 @@
+.benefits__list{
+    display:flex;
+    align-items: center;
+    margin-bottom:0;
+     }
+ 
+ .benefits{
+          padding-top:94px;
+     padding-bottom:0;
+ }
+ .benefits__item{
+     width: 270px;
+     
+&:not(:last-child){
+     margin-right:30px;
+ }
+ }
+ 
+ 
+ .benefits .title{
+ margin-bottom:10px;
+ font-weight:700;
+ font-size: 14px;
+ line-height: 1.14;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ }
+ .benefits__description{
+  margin-bottom:0;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 1.7;
+ letter-spacing: 0.03em;
+ text-transform: none;}
+ 
+ 
+ .benefits__icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:30px;
+    width:270px;
+    height:120px;
+    background-color:var(--team-bg-color);
+    border-radius: 4px;
+    }
+ 
+ .benefits__icon-item{
+     width:70px;
+     height:70px;
+   }
