@@ -644,22 +644,70 @@ img {
 }
 
 .benefits__list {
-  display: flex;
-  align-items: center;
   margin-bottom: 0;
 }
 
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 0;
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
-.benefits__item {
-  width: 270px;
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    flex-wrap: none;
+  }
+}
+
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
 }
 
 .benefits__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits__item:nth-child(2n+1) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .benefits .title {
@@ -685,10 +733,30 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background-color: var(--team-bg-color);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .benefits__icon {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__icon {
+    width: 354px;
+  }
+  .benefits__icon .benefits__icon:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__icon {
+    width: 270px;
+  }
 }
 
 .benefits__icon-item {
@@ -704,6 +772,12 @@ img {
 
 .products__list:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .products {
+    display: none;
+  }
 }
 
 .products__card-wrapper {
@@ -846,7 +920,7 @@ img {
   border: 1px solid  #2196F3;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .customers__item:nth-child(-n+4) {
     margin-bottom: 30px;
   }

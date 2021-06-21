@@ -2,11 +2,14 @@
     display:flex;
     justify-content: space-between;
     margin-bottom:0;
-    
+   
     &:not(:last-child){
     margin-right:30px;
-}
-   }
+}}
+@media screen and (max-width:1199px){
+   .products {
+       display: none;
+    }}
 
 
 .products__card-wrapper{
