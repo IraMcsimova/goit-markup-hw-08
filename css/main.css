@@ -1023,35 +1023,51 @@ img {
   flex-wrap: wrap;
   margin-right: 0;
   margin-bottom: 0;
+  justify-content: center;
 }
 
 .portfolio__example-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
   transition-property: box-shadow;
   transition-duration: var(--duration);
   transition-timing-function: var(--time-function);
-}
-
-.portfolio__example-item:nth-child(3n) {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.portfolio__example-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .portfolio__example-item:hover, .portfolio__example-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio__example-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__example-item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__example-item:nth-child(3n) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .portfolio__example-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  .portfolio__example-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .portfolio__photo {
-  width: 370px;
+  width: 100%;
 }
 
 .portfolio__title-description {
-  padding: 20px 24px;
+  padding: 20px 24px 20px 24px;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
@@ -1111,9 +1127,18 @@ img {
 
 .portfolio__list-button {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list-button {
+    justify-content: center;
+    flex-wrap: none;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__item:not(:last-child) {
@@ -1142,6 +1167,10 @@ img {
   background-color: var(--accent-text-color);
   color: var(--hero-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__button:nth-child(-n+3) {
+  margin-bottom: 15px;
 }
 
 .footer {
