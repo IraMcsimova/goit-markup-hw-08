@@ -1,11 +1,37 @@
-.footer-contacts-part{
+.footer__contacts-part{
     justify-content:baseline;
-    margin-right:70px;
+    margin-right:0;
+    margin-bottom:60px;
 }
-
+@media screen and (min-width:768px){
+    .footer__contacts-part{
+       margin-right:165px; 
+       margin-left:76px;
+    }
+}
+@media screen and (min-width:1200px){
+    .footer__contacts-part{
+       margin-right:70px; 
+       margin-left:0;
+    }
+}
+@media screen and (min-width:768px){
+    .footer__contact-signing{
+    margin-left:166px;
+    max-width:450px;
+    }}
+@media screen and (min-width:1200px){
 .footer__contact-signing{
-margin-left:93px;
-}
+margin-left:0;
+max-width:1200px;
+}}
+
+
+@media screen and (min-width:1200px){
+    .footer__contact-signing{
+        margin-left:93px;
+}}
+
 
 .contact-signing__header{
 font-weight: bold;
@@ -26,7 +52,8 @@ margin-bottom:20px;
 .contact-signing__form-input{
     width:358px;
     height:50px;
-margin-right:12px;
+margin-right:0;
+margin-bottom:20px;
 padding:16px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -35,7 +62,12 @@ background:  var(--hero-footer-bg-color);
 color:var(--hero-text-color);
 outline:var(--title-text-color);
 }
-
+@media screen and (min-width:1200px){
+    .contact-signing__form-input{
+        margin-right:12px;
+        margin-bottom:0;
+    }
+}
 .contact-signing__form-button{
     position:relative;
     padding:0;
