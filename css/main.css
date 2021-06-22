@@ -1026,6 +1026,12 @@ img {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__examples-list {
+    justify-content: left;
+  }
+}
+
 .portfolio__example-item {
   transition-property: box-shadow;
   transition-duration: var(--duration);
@@ -1045,6 +1051,12 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__example-item {
     max-width: 354px;
+  }
+  .portfolio__example-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio__example-item:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }
 
@@ -1067,10 +1079,16 @@ img {
 }
 
 .portfolio__title-description {
-  padding: 20px 24px 20px 24px;
+  padding: 20px 24px;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__title-description {
+    padding: 20px 15px;
+  }
 }
 
 .portfolio__examples-title {
