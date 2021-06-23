@@ -213,6 +213,13 @@ img {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 350px;
+    height: 609px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .modal {
     width: 450px;
@@ -589,7 +596,7 @@ img {
   position: fixed;
   padding: 48px 40px;
   width: 100%;
-  height: 100%;
+  height: 796px;
 }
 
 .mobile-menu__close-button {
