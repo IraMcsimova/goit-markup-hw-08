@@ -1,4 +1,6 @@
 
+
+
 .header{
 & .contacts {
     display:flex;
@@ -15,7 +17,9 @@
     margin-right:50px;
 }
 }
-
+.contacts__item .link{
+display:none;}
+@media screen and (min-width:768px){
 .contacts__item{
     display:flex;
    color:var(--primary-text-color);
@@ -36,7 +40,7 @@ transition-timing-function: var(--time-function);
     fill:var(--accent-text-color);
 }
     }
-
+}
 .contacts__icon-envelope{
     width:16px;
     height:12px;
