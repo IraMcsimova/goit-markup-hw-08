@@ -17,7 +17,20 @@
     margin-right:50px;
 }
 }
-.contacts__item .link{
+@media screen and (min-width:768px) and (max-width:1199px)
+{
+    .header{
+        & .contacts {
+        display:block;
+        margin-left:84px;
+        font-size: 12px;
+        line-height: 1,16;
+    }
+      }
+}
+
+
+.contacts__item {
 display:none;}
 @media screen and (min-width:768px){
 .contacts__item{
@@ -39,6 +52,11 @@ transition-timing-function: var(--time-function);
     color:var(--accent-text-color);
     fill:var(--accent-text-color);
 }
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .contacts__item:first-child{
+        margin-bottom:10px;
     }
 }
 .contacts__icon-envelope{

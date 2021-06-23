@@ -19,11 +19,13 @@
     color:#000000;
     }
 }
-@media screen and (min-width:480px) and (max-width:768px){
+@media screen and (min-width:480px) and (max-width:767px){
     .site-nav{
         padding:16px 0;
+        
     }
 }
+
 @media screen and (min-width:480px){
     .site-nav__list{
         display:none;
@@ -34,6 +36,7 @@
     display:flex;
     align-items:center;
     margin-bottom:0;
+
    &::before{
             display:block;
             content:"";
@@ -76,8 +79,14 @@ letter-spacing: 0.03em;
 line-height: 1.16;
 }
 }
+@media screen and (min-width:768px){
+    .logo{
+        margin-right:41px;
+       font-weight: 400;
+font-size: 24px;
+line-height:1.16;
 
-
+    }}
 .site-nav__link{
     position:relative;
     display:block;
