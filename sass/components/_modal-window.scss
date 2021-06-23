@@ -10,6 +10,12 @@
     margin-bottom:0;
    
 }
+@media screen and (max-width:768px){
+    .modal{
+        width:450px;
+    height:100%;
+    }
+}
 .is-hidden{
     opacity:0;
     visibility: hidden;

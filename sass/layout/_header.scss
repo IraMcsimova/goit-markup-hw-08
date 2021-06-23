@@ -14,7 +14,7 @@
     font-size: 14px;
     line-height: 1,1;
     letter-spacing: 0.02em;
-    
+    overflow-y: hidden;
    & .logo__second-part_black {
     color:#000000;
     }
@@ -22,7 +22,7 @@
 @media screen and (min-width:480px) and (max-width:767px){
     .site-nav{
         padding:16px 0;
-        
+
     }
 }
 
@@ -35,6 +35,7 @@
     .site-nav__list{
     display:flex;
     align-items:center;
+    justify-content: space-between;
     margin-bottom:0;
 
    &::before{
