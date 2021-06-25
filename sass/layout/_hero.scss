@@ -89,6 +89,16 @@ screen and (min-resolution: 2dppx) {
      color:var(--hero-text-color);
     text-align:center;
  }
+ @media screen and (max-width:320px){
+     .hero__header{
+        font-weight: 700;
+     font-size: 18px;
+     line-height: 1.4;
+     text-align: center;
+     letter-spacing: 0.06em;
+     max-height:320px;
+     }
+ }
  .hero__button {
     min-width: 200px;
     padding: 10px 32px;

@@ -1,9 +1,11 @@
 .benefits__list{
     margin-bottom:0;
+    display:flex-inline;
+    justify-content: center;
+    align-items:center;
      }
 
-
-@media screen and (min-width:768px){
+  @media screen and (min-width:768px){
 .benefits__list{
     display:flex;
     align-items: center;
@@ -23,7 +25,7 @@
     padding-top:94px;
 padding-bottom:0;
 }}
-@media screen and (min-width:480px){
+@media screen and (max-width:480px){
     .benefits__item{
        max-width:450px;
     }
@@ -31,6 +33,7 @@ padding-bottom:0;
 @media screen and (min-width:768px){
     .benefits__item{
        max-width:354px;
+       margin:0 auto;
     }
 }
 @media screen and (min-width:1200px){
@@ -81,7 +84,11 @@ padding-bottom:0;
     background-color:var(--team-bg-color);
     border-radius: 4px;
     }
-    @media screen and (min-width:480px){
+    @media screen and (max-width:320px){
+        .benefits__icon{
+            max-width:290px;
+                }}
+    @media screen and (max-width:480px){
         .benefits__icon{
             width:450px;
                 }}
