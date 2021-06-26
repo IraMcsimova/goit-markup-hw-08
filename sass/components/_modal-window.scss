@@ -8,25 +8,21 @@
     transform: translate(-50%, -50%);
         background-color: var(--site-nav-bg-color);
     padding:40px 39px 40px 41px;
-    margin-bottom:0;
-   
+    margin:15px auto;
+      height:95%;
+      width:95%;
 }
-@media screen and (max-width:479px){
-    .modal{
-        width:350px;
-    height:609px;
-    }
-}
-@media screen and (max-width:768px){
+@media screen and (min-width:479px){
     .modal{
         width:450px;
-    height:609px;
+        height:609px;
+    
     }
 }
 @media screen and (min-width:1200px){
     .modal{
         width:528px;
-    min-height: 581px;
+    height: 581px;
     
     }
 }

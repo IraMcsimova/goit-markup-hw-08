@@ -219,17 +219,12 @@ img {
   transform: translate(-50%, -50%);
   background-color: var(--site-nav-bg-color);
   padding: 40px 39px 40px 41px;
-  margin-bottom: 0;
+  margin: 15px auto;
+  height: 95%;
+  width: 95%;
 }
 
-@media screen and (max-width: 479px) {
-  .modal {
-    width: 350px;
-    height: 609px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 479px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -239,7 +234,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
@@ -620,6 +615,8 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    display: block;
+    align-content: flex-end;
   }
 }
 
@@ -701,8 +698,12 @@ img {
   margin-bottom: 32px;
 }
 
+.mobile-menu__item:last-child {
+  margin-bottom: 130px;
+}
+
 .mobile-menu__list {
-  margin-bottom: 200px;
+  margin-bottom: auto;
 }
 
 .mobile-menu__contacts-link {
