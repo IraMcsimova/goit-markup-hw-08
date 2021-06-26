@@ -1,6 +1,9 @@
 @media screen and (max-width:320px){
     .mobile-menu{
         max-width:320px;
+        opacity: 0;
+visibility: hidden;
+pointer-events: none;
         }
 }
 
@@ -17,7 +20,6 @@ overflow-y: scroll;
 opacity: 0;
 visibility: hidden;
 pointer-events: none;
-z-index: 1;
 }}
 @media screen and (min-width:768px){
     .mobile-menu{
@@ -50,8 +52,9 @@ width:18px;
 height:18px;
 top:21px;
 right:26px;
-
+cursor: pointer;
 }
+
 .mobile-menu__close-icon{
     width:18px;
     height:18px;
@@ -62,7 +65,9 @@ right:26px;
     transition-duration: var(--duration);
     transition-timing-function: var(--time-function);
 }
-.mobile-menu__close-icon:hover{
+.mobile-menu__close-icon:focus,
+.mobile-menu__close-icon:hover
+{
     fill: #2196F3;
 }
 
@@ -96,14 +101,14 @@ font-weight: 500;
 font-size: 34px;
 line-height: 1.18;
 letter-spacing: 0.02em;
+ color: #757575;
+
+}
 
 @media screen and (max-width:320px){
     .mobile-menu__contacts-link{
        font-weight: 200;
-    font-size: 14px;
-}
-}
-
+    font-size: 14px;}
 .mobile-menu__contacts-list{
     margin: 0 auto;
     
@@ -115,7 +120,7 @@ letter-spacing: 0.02em;
       font-size: 17px;
 }
 .mobile-menu__contacts-link-email{
-    color: #757575;
+   
     font-weight: 200;
     font-size: 17px;
 }
@@ -142,8 +147,7 @@ letter-spacing: 0.02em;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
-   
-  }
+     }
   @media screen and (max-width:320px){
     .mobile-menu__social-nets-link{
         font-weight: 500;

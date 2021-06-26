@@ -11,25 +11,27 @@
 }
 @media screen and (min-width:1200px){
     .footer__contacts-part{
+        justify-content:start;
        margin-right:70px; 
        margin-left:0;
     }
 }
-@media screen and (min-width:768px){
-    .footer__contact-signing{
-    margin-left:166px;
-    max-width:450px;
-    }}
-@media screen and (min-width:1200px){
 .footer__contact-signing{
-margin-left:0;
-max-width:1200px;
-}}
+display:block;
+ margin:0 auto;
+}
+
+@media screen and (max-width:1199px){
+    .footer__contact-signing{
+        max-width:450px;
+        }}
+
 
 
 @media screen and (min-width:1200px){
     .footer__contact-signing{
-        margin-left:93px;
+        margin-left:0;
+       min-width:570px;
 }}
 
 
@@ -42,13 +44,21 @@ text-transform: uppercase;
 font-weight: 700;
 margin-bottom:20px;
 }
+@media screen and (max-width:1199px){
+    .contact-signing__form{
+        display:block;
+        justify-content: center;
+        align-items: center;
 
-.contact-signing__form{
-    display:block;
-   justify-content:center;
-    align-items:center;
+        }
     }
-    
+@media screen and (min-width:1200px){
+.contact-signing__form{
+    display:flex;
+      align-items:baseline;
+      
+    }
+}
 .contact-signing__form-input{
    
     height:50px;
@@ -64,10 +74,16 @@ outline:var(--title-text-color);
 max-width: 358px;
     width: 100%;
 }
+@media screen and (min-width:768px){
+    .contact-signing__form-input{
+       min-width:450px;
+    }
+}
 @media screen and (min-width:1200px){
     .contact-signing__form-input{
+        
         margin-right:12px;
-       
+        min-width:358px;
     }
 }
 .contact-signing__form-button{
@@ -80,14 +96,23 @@ max-width: 358px;
 border-radius: 4px;
 border: 1px solid #2196F3;
 color:var(--hero-text-color);
+font-family: Roboto;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.8;
 letter-spacing: 0.06em;
 cursor: pointer;
+border-inline:0;
+margin-right: 0;
 }
+@media screen and (min-width:1200px){
+.contact-signing__form-button{
+    display:flex;
+}}
 .icon-send{
     position:absolute;
+    top:13px;
+    right:29px;
     width:24px;
     height:24px;
     margin-left:10px;

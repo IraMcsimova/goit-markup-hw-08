@@ -12,7 +12,7 @@
        </head>
 <body class="page">
 <header class="header">
-    <div class="container header-container">
+    <div class="container header__container">
 <!--Главная навигационная панель страницы-->
 <nav class="site-nav">
     <a href="./index.html" class="logo" lang="en"> Web<span class="logo__second-part_black">Studio</span></a>
@@ -29,8 +29,8 @@
     </ul>
 </nav>
 <!--Модальное меню-->
-<button type="button" class="header__mobile-menu-button" data-menu-button>
-    <svg class="header__mobile-menu-icon">
+<button type="button" class="header__button" data-menu-button>
+    <svg class="header__button-icon">
         <use href="./images/icons/sprite.svg#icon-menu_24px">
         </use>
     </svg>
@@ -76,8 +76,7 @@
         <li class="mobile-menu__social-nets-item">           
             <a href="mailto:info@devstudio.com" class="mobile-menu__social-nets-link mobile-menu__social-nets-link link">LinkedIn</a>
             </li>
-    
-    </ul>
+        </ul>
         </div>
     </div>
 </header>
@@ -92,7 +91,7 @@
 <!-- преимущества компании спрятать-->
 <section class="benefits">
 <h2 class="visually-hidden">Преимущества компании спрятать</h2>
-<div class="container">
+<div class="container benefits__container">
 <ul class="list benefits__list">
     <li class="benefits__item">
     <div class="benefits__icon">
@@ -133,17 +132,26 @@
     <div class="container">
     <h2 class="main-title">Чем мы занимаемся</h2>
     <ul class="list products__list">
-        <li class="products__item"><div class="products__card-wrapper"><img src="./images/what_are_we_doing/box1.jpg" alt="чем мы занимаемся один" width="370"/>
+        <li class="products__item"><div class="products__card-wrapper">
+            <picture class="products__picture">
+                <source srcset="./images/what_are_we_doing/box1.jpg 1x, ./images/what_are_we_doing/box1-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/what_are_we_doing/box1.jpg" alt="чем мы занимаемся один" width="370"/></picture>
         <p class="products__overlay">Десктопные приложения</p></div></li>
-        <li class="products__item"><div class="products__card-wrapper"><img src="./images/what_are_we_doing/box2.jpg" alt="чем мы занимаемся два" width="370"/>
+        <li class="products__item"><div class="products__card-wrapper">
+            <picture class="products__picture">
+                <source srcset="./images/what_are_we_doing/box2.jpg 1x, ./images/what_are_we_doing/box2-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/what_are_we_doing/box2.jpg" alt="чем мы занимаемся два" width="370"/></picture>
             <p class="products__overlay">Мобильные приложения</p></div></li>
-        <li class="products__item"><div class="products__card-wrapper"><img src="./images/what_are_we_doing/box3.jpg" alt="чем мы занимаемся три" width="370"/>
+        <li class="products__item"><div class="products__card-wrapper">
+            <picture class="products__picture">
+                <source srcset="./images/what_are_we_doing/box3.jpg 1x, ./images/what_are_we_doing/box3-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/what_are_we_doing/box3.jpg" alt="чем мы занимаемся три" width="370"/></picture>
             <p class="products__overlay">Дизайнерские решения</p></div></li>
     </ul></div>
 </section>
 <!--Команда-->
 <section class="team section">
-    <div class="container">
+    <div class="container team__container">
     <h2 class="main-title">Наша команда</h2>
         <ul class="list team__list">
         <li class="team__item">
@@ -296,7 +304,7 @@
 </section>
 <!--Постоянные клиенты-->
 <section class="customers section">
-    <div class="container">
+    <div class="container customers__container">
         <h2 class="main-title">Постоянные клиенты</h2>
         <ul class="list customers__list">
             <li class="customers__item">

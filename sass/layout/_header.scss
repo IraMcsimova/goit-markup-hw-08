@@ -1,9 +1,19 @@
-.header-container{
+.header{
+    border-bottom: 1px solid #ECECEC;
+     
+}
+
+
+.header__container{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    border-bottom: 1px solid #ECECEC;
+   min-height:60px;
 }
+@media screen and (min-width:768px){
+.header__container{
+       min-height:80px;
+}}
 
 
 .site-nav{
@@ -110,19 +120,30 @@ color:var(--accent-text-color);
 }
 
 
-.header__mobile-menu-button{
+.header__button{
+    position:absolute;
+    top:22px;
+    right:22px;
         background-color: transparent;
         border:none;
         padding:0;
         line-height: 0;
         cursor: pointer;
 }
-.header__mobile-menu-icon{
+
+@media screen and (min-width:768px){
+    .header__button{
+    display:none;
+}}
+.header__button-icon{
     width:24px;
     height:16px;
     fill: #212121;
-
-    &.mobile-menu-icon:hover{
-    fill:var(--accent-text-color);
+  
 }
+.header__button-icon:hover,
+.header__button-icon:focus{
+     fill:#2196F3;
+
+    
 }
