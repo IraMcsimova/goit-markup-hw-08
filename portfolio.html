@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +7,16 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.min.css"/>
-    </head>
+       </head>
 <body class="page">
-    <header class="header">
-        <div class="container header-container">
-    <!--Главная навигационная панель страницы-->
-    <nav class="site-nav">
-        <a href="./index.html" class="logo" lang="en"> Web<span class="logo__second-part_black">Studio</span></a>
-        <ul class="list site-nav__list">
+<header class="header">
+    <div class="container header__container">
+<!--Главная навигационная панель страницы-->
+<nav class="site-nav">
+    <a href="./index.html" class="logo" lang="en"> Web<span class="logo__second-part_black">Studio</span></a>
+    <ul class="list site-nav__list">
         <li class="site-nav__item"> 
             <a href="./index.html" class="site-nav__link link">Студия</a>
         </li>
@@ -27,26 +27,27 @@
             <a href="" class="site-nav__link link" >Контакты</a>
         </li>
     </ul>
-    </nav>
-    <button type="button" class="header__mobile-menu-button" data-menu-button>
-        <svg class="header__mobile-menu-icon">
-            <use href="./images/icons/sprite.svg#icon-menu_24px">
-            </use>
-        </svg>
-    </button>
+</nav>
+<!--Модальное меню-->
+<button type="button" class="header__button" data-menu-button>
+    <svg class="header__button-icon">
+        <use href="./images/icons/sprite.svg#icon-menu_24px">
+        </use>
+    </svg>
+</button>
     <ul class="contacts header__contacts list">
-        <li class="contacts__item">             
-        <a href="mailto:info@devstudio.com" class="contacts__link link"><svg class="contacts__icon-envelope">
-        <use href="./images/icons/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+            <li class="contacts__item">             
+            <a href="mailto:info@devstudio.com" class="contacts__link link"><svg class="contacts__icon-envelope">
+            <use href="./images/icons/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+            </li>
+            <li class="contacts__item">           
+            <a href="tel:+380961111111" class="contacts__link link"> <svg class="contacts__icon-smartphone">
+            <use href="./images/icons/sprite.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
         </li>
-        <li class="contacts__item">           
-        <a href="tel:+380961111111" class="contacts__link link"> <svg class="contacts__icon-smartphone">
-        <use href="./images/icons/sprite.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
-    </li>
-</ul> 
-<div class="mobile-menu is-open" data-menu>
+    </ul></div>
+    <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-            <button class="mobile-menu__close-button" data-menu-close>
+            <button class="mobile-menu__close-button" type="button" data-menu-close>
                 <svg class="mobile-menu__close-icon  data-modal-close">
                 <use href="./images/icons/sprite.svg#icon-close-icon"></use>
             </svg></button>
@@ -75,14 +76,14 @@
         <li class="mobile-menu__social-nets-item">           
             <a href="mailto:info@devstudio.com" class="mobile-menu__social-nets-link mobile-menu__social-nets-link link">LinkedIn</a>
             </li>
-    
-    </ul>
-        </div></div>
-    </header>
+        </ul>
+        </div>
+    </div>
+</header>
 <main class="body">
         <!-- Панель фильтров примеров работ студии-->
         <section class="portfolio section">
-            <div class="container">
+            <div class="container portfolio__container">
             <h1 class="visually-hidden">Панель фильтров для просмотра примеров работ студии не забыть спрятать заголовок</h1>
         <ul class="list portfolio__list-button">
             <li class="portfolio__item">
