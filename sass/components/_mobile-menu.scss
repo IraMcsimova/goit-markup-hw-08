@@ -101,7 +101,9 @@ line-height: 1.18;
 .mobile-menu__list{
    margin-bottom:auto;
    }
-
+   .mobile-menu__list .current{
+       color:#2196F3
+   }
 .mobile-menu__contacts-link{
     font-family: Roboto;
 font-weight: 500;
@@ -138,9 +140,10 @@ letter-spacing: 0.02em;
   .mobile-menu__social-nets-list{
       display: flex;
      align-items: flex-end;
-     flex-wrap:wrap;
-     margin-bottom: 0;
+         margin-bottom: 0;
      margin-top:64px;
+     flex-wrap: wrap;
+   
   } 
  
   .mobile-menu__social-nets-link{
